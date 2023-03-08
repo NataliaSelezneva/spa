@@ -12,7 +12,7 @@ const Products = () => {
                 if(selectedCategory === 'All') return true;
                 return selectedCategory === product.category
             })
-            .map((product, id) => <Product product={product} key={product.id} />)}
+            .map((product) => <Product product={product} key={product.id} />)}
         </div>
     )
 }
